@@ -1,0 +1,9 @@
+<h2>Tasks Due On <%= @date %></h2>
+
+<ul>
+	<% @tasks.each do |task| %>
+		<li>
+			<%= task.description %> | <%= task.deadline %>
+		</li>
+	<% end %>
+</ul>
